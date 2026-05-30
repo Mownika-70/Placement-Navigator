@@ -1,0 +1,6 @@
+{
+  "name": "PrepAI",
+  "description": "Centralized career search platform to track applications, manage interviews, detect skill gaps, and optimize resumes with AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

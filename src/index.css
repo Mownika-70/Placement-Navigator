@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  
+  --color-brand-primary: #142175;
+  --color-brand-secondary: #004ccb;
+  --color-brand-accent: #0262ff;
+  --color-brand-surface: #f8f9ff;
+  --color-brand-on-surface: #0b1c30;
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(226, 232, 240, 0.4);
+  }
+
+  .lift-hover {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.1), box-shadow 0.2s ease;
+  }
+
+  .lift-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 32px rgba(46, 58, 140, 0.12);
+  }
+  
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  .material-symbols-fill {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}
